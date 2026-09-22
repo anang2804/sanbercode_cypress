@@ -25,27 +25,6 @@ cypress.config.js
 package.json
 ```
 
-## Cara Install & Menjalankan Test
-
-1. Install dependency:
-
-   ```bash
-   npm install
-   ```
-
-2. Jalankan Cypress (mode interaktif):
-
-   ```bash
-   npm run cy:open
-   ```
-
-   lalu pilih `login.cy.js`.
-
-3. Atau jalankan headless (langsung di terminal):
-   ```bash
-   npm run cy:run:headless
-   ```
-
 ## Cakupan Test Case
 
 Automation ini mencakup 12 test case dari total 19 skenario yang terdokumentasi di test case design (spreadsheet), dengan kombinasi skenario **Positive** dan **Negative**:
