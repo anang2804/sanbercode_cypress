@@ -38,11 +38,11 @@ Automation ini mencakup 12 test case dari total 19 skenario yang terdokumentasi 
 | 5   | TS-LGN-005   | Login berhasil dengan username & password valid | Positive |
 | 6   | TS-LGN-006   | Login gagal - password salah                    | Negative |
 | 7   | TS-LGN-007   | Login gagal - username salah                    | Negative |
-| 8   | TS-LGN-009   | Login gagal - username dikosongkan              | Negative |
-| 9   | TS-LGN-010   | Login gagal - password dikosongkan              | Negative |
-| 10  | TS-LGN-011   | Login gagal - username & password dikosongkan   | Negative |
-| 11  | TS-LGN-012   | Login berhasil menggunakan tombol Enter         | Positive |
-| 12  | TS-LGN-018   | Berhasil mengakses halaman Forgot Password      | Positive |
+| 8   | TS-LGN-008   | Login gagal - username dikosongkan              | Negative |
+| 9   | TS-LGN-009   | Login gagal - password dikosongkan              | Negative |
+| 10  | TS-LGN-010   | Login gagal - username & password dikosongkan   | Negative |
+| 11  | TS-LGN-011   | Login berhasil menggunakan tombol Enter         | Positive |
+| 12  | TS-LGN-012   | Berhasil mengakses halaman Forgot Password      | Positive |
 
 ## Hasil Test
 

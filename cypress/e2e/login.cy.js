@@ -58,35 +58,35 @@ describe("OrangeHRM - Fitur Login", () => {
     loginPage.loginUrlValidation();
   });
 
-  // TS-LGN-009
-  it("TS-LGN-009 - Login gagal saat username dikosongkan", () => {
+  // TS-LGN-008
+  it("TS-LGN-008 - Login gagal saat username dikosongkan", () => {
     loginPage.inputPassword(loginData.validPassword);
     loginPage.clickLoginBtn();
     loginPage.requiredFieldValidation("Required");
   });
 
-  // TS-LGN-010
-  it("TS-LGN-010 - Login gagal saat password dikosongkan", () => {
+  // TS-LGN-009
+  it("TS-LGN-009 - Login gagal saat password dikosongkan", () => {
     loginPage.inputUsername(loginData.validUsername);
     loginPage.clickLoginBtn();
     loginPage.requiredFieldValidation("Required");
   });
 
-  // TS-LGN-011
-  it("TS-LGN-011 - Login gagal saat username dan password dikosongkan", () => {
+  // TS-LGN-010
+  it("TS-LGN-010 - Login gagal saat username dan password dikosongkan", () => {
     loginPage.clickLoginBtn();
     loginPage.bothAlert();
   });
 
-  // TS-LGN-012
-  it("TS-LGN-012 - Login berhasil menggunakan tombol Enter", () => {
+  // TS-LGN-011
+  it("TS-LGN-011 - Login berhasil menggunakan tombol Enter", () => {
     loginPage.inputUsername(loginData.validUsername);
     cy.get('[name="password"]').type(`${loginData.validPassword}{enter}`);
     loginPage.dashboardUrlValidation();
   });
 
-  // TS-LGN-013
-  it("TS-LGN-013 - Berhasil mengakses halaman Forgot Password", () => {
+  // TS-LGN-012
+  it("TS-LGN-012 - Berhasil mengakses halaman Forgot Password", () => {
     loginPage.clickForgotPassword();
     loginPage.forgotPassUrlValidation();
     loginPage.resetPasswordBtnVisible();
