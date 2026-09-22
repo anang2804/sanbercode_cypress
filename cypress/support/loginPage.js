@@ -1,3 +1,5 @@
+// TUGAS POM
+
 import loginData from "../fixtures/loginData.json";
 
 class loginPage {
