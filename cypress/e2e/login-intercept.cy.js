@@ -6,7 +6,7 @@ describe("OrangeHRM - Fitur Login (dengan Intercept)", () => {
     loginPage.visitUrl();
   });
 
-  // TS-LGN-001 | Intercept: dokumen halaman login (**/auth/login)
+  // TS-LGN-001
   it("TS-LGN-001 - Menampilkan halaman Login dengan elemen lengkap", () => {
     loginPage.interceptLoginPageDocument();
     loginPage.visitUrl();
@@ -31,7 +31,7 @@ describe("OrangeHRM - Fitur Login (dengan Intercept)", () => {
     loginPage.waitWorkingTime();
   });
 
-  // TS-LGN-006 | Intercept: dashboard/employees/action-summary
+  // TS-LGN-006
   it("TS-LGN-006 - Login gagal dengan password salah", () => {
     loginPage.interceptActionSummary();
 
@@ -44,7 +44,7 @@ describe("OrangeHRM - Fitur Login (dengan Intercept)", () => {
     loginPage.verifyActionSummaryNotCalled();
   });
 
-  // TS-LGN-007 | Intercept: dashboard/shortcuts
+  // TS-LGN-007
   it("TS-LGN-007 - Login gagal dengan username salah", () => {
     loginPage.interceptShortcuts();
 
@@ -57,7 +57,7 @@ describe("OrangeHRM - Fitur Login (dengan Intercept)", () => {
     loginPage.verifyShortcutsNotCalled();
   });
 
-  // TS-LGN-009 | Intercept: buzz/feed
+  // TS-LGN-009
   it("TS-LGN-009 - Login gagal saat username dikosongkan", () => {
     loginPage.interceptFeed();
 
@@ -68,7 +68,7 @@ describe("OrangeHRM - Fitur Login (dengan Intercept)", () => {
     loginPage.verifyFeedNotCalled();
   });
 
-  // TS-LGN-010 | Intercept: dashboard/employees/subunit
+  // TS-LGN-010
   it("TS-LGN-010 - Login gagal saat password dikosongkan", () => {
     loginPage.interceptSubunit();
 
@@ -79,7 +79,7 @@ describe("OrangeHRM - Fitur Login (dengan Intercept)", () => {
     loginPage.verifySubunitNotCalled();
   });
 
-  // TS-LGN-011 | Intercept: dashboard/employees/leaves
+  // TS-LGN-011
   it("TS-LGN-011 - Login gagal saat username dan password dikosongkan", () => {
     loginPage.interceptLeaves();
 
@@ -89,7 +89,7 @@ describe("OrangeHRM - Fitur Login (dengan Intercept)", () => {
     cy.get("@leaves.all").should("have.length", 0);
   });
 
-  // TS-LGN-012 | Intercept: dashboard/employees/locations
+  // TS-LGN-012
   it("TS-LGN-012 - Login berhasil menggunakan tombol Enter", () => {
     loginPage.interceptLocations();
 
